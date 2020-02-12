@@ -9,3 +9,8 @@ class Conference(Id):
         self.hour = None
         self.creation_date = None
         self.speaker_id = None
+
+    
+    def __str__(self):
+       return """======================={} : {}
+       {} =================""".format(self.hour, self.title, self.resume)

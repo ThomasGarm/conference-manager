@@ -8,3 +8,7 @@ class Speaker(Id):
         self.description = None
         self.profession = None
         self.statut = None
+
+    def __str__(self):
+       return """======================={}  {}: {}
+       {}\n{} =================""".format(self.firstname, self.lastname, self.profession, self.description, self.statut)

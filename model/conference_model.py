@@ -16,9 +16,6 @@ class Request_model_conference(Conference):
         self.db.connection.commit()
         self.db.close_connection()
 
-            
-
-
     def get_all_conference(self):
         sql = """SELECT * FROM conference AS c 
                 INNER JOIN speaker AS s ON s.id = c.speaker_id
